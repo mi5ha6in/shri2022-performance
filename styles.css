@@ -27,7 +27,7 @@ html, body {
     height: 100%;
 }
 
-.a11y-hidden {
+.a11 {
     position: absolute;
     left: auto;
     height: 1px;
@@ -49,7 +49,7 @@ html, body {
     border-bottom: 1px solid #F0F0F0;
 }
 
-.h__logo {
+.h__lo {
     flex: 0 0 auto;
     width: 6.75rem;
     height: 2.3125rem;
@@ -59,7 +59,7 @@ html, body {
     background-size: contain;
 }
 
-.h__menu {
+.h__m {
     display: none;
     width: 3.5rem;
     height: 100%;
@@ -73,7 +73,7 @@ html, body {
     cursor: pointer;
 }
 
-.h__links {
+.h__ls {
     display: flex;
     gap: 1.75rem;
     margin: 0;
@@ -82,12 +82,12 @@ html, body {
 }
 
 
-.h__item {
+.h__i {
     margin: 0;
     padding: 0;
 }
 
-.h__link {
+.h__lk {
     font-weight: bold;
     opacity: .6;
     transition: opacity .15s ease-in-out;
@@ -95,15 +95,15 @@ html, body {
     color: #333333;
 }
 
-.h__link:hover {
+.h__lk:hover {
     opacity: 1;
 }
 
-.h__link_current {
+.h__lk_c {
     opacity: 1;
 }
 
-.main {
+.m {
     display: grid;
     flex: 0 0 auto;
     grid-template-columns: 50% 50%;
@@ -113,7 +113,7 @@ html, body {
 
 
 
-.main__devices {
+.m__devices {
     grid-column-start: 1;
     grid-column-end: 3;
 }
@@ -415,10 +415,10 @@ html, body {
         padding: 0 0 0 1.25rem;
         border-bottom: none;
     }
-    .h__menu {
+    .h__m {
         display: block;
     }
-    .h__links {
+    .h__ls {
         display: none;
 
         position: absolute;
@@ -433,20 +433,20 @@ html, body {
         box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
     }
 
-    .h__links-toggled {
+    .h__ls-t {
         display: flex;
         transition: opacity .3s ease-in-out;
         opacity: 0;
     }
 
-    .h__links_opened {
+    .h__ls_opened {
         display: flex;
         visibility: visible;
         opacity: 1;
         transition: opacity .3s ease-in-out;
     }
 
-    .main {
+    .m {
         padding: 0 1.25rem;
     }
     .event-grid {
@@ -525,10 +525,10 @@ html, body {
 }
 
 @media (max-width: 1024px) {
-    .main {
+    .m {
         grid-template-columns: 100%;
     }
-    .main__devices {
+    .m__devices {
         grid-column-end: 2;
     }
 }
