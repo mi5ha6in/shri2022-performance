@@ -120,14 +120,14 @@ html, body {
 
 
 
-.section__title-header {
+.s__te-header {
     margin: 0;
     font-size: 1.125rem;
     font-weight: bold;
     color: #333333;
 }
 
-.section__title {
+.s__te {
     display: flex;
     align-items: baseline;
     margin: 0 0 1.25rem 0;
@@ -147,7 +147,7 @@ html, body {
     appearance: none;
 }
 
-.section__tabs {
+.s__ts {
     display: flex;
     gap: 0.625rem;
     align-items: baseline;
@@ -158,7 +158,7 @@ html, body {
 
 
 
-.section__tab {
+.s__tb {
     flex: 0 0 auto;
     padding: 0.4375rem 0.9375rem .5rem;
     font-size: 0.8125rem;
@@ -170,11 +170,11 @@ html, body {
     transition-property: background-color, box-shadow;
 }
 
-.section__tab_active {
+.s__tb_active {
     background: #FFD93E;
 }
 
-.section__tab:not(.section__tab_active):hover {
+.s__tb:not(.s__tb_active):hover {
     background: #fff;
     box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
 }
@@ -351,21 +351,21 @@ html, body {
     list-style: none;
 }
 
-.section__panel {
+.s__pl {
     padding-bottom: .625rem;
     overflow-x: auto;
     scrollbar-width: none;
 }
 
-.section__panel::-webkit-scrollbar {
+.s__pl::-webkit-scrollbar {
     display: none;
 }
 
-.section__panel_hidden {
+.s__pl_hidden {
     display: none;
 }
 
-.section__panel-list {
+.s__pl-list {
     display: flex;
     gap: 0.9375rem;
     margin: 0;
@@ -460,7 +460,7 @@ html, body {
         display: none;
     }
     
-    .section__title {
+    .s__te {
         gap: 1rem;
     }
 
@@ -470,7 +470,7 @@ html, body {
     .section__select {
         display: block;
     }
-    .section__tabs {
+    .s__ts {
         display: none;
     }
     .h-d {
