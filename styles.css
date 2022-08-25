@@ -81,29 +81,6 @@ html, body {
     list-style: none;
 }
 
-@keyframes showMenu {
-    from {
-        transform: translateY(-1rem);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes hideMenu {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    to {
-        transform: translateY(-1rem);
-        opacity: 0;
-        visibility: hidden;
-    }
-}
 
 .header__item {
     margin: 0;
@@ -458,15 +435,15 @@ html, body {
 
     .header__links-toggled {
         display: flex;
-        animation: hideMenu .3s ease-in-out 1;
-        animation-fill-mode: both;
+        transition: opacity .3s ease-in-out;
+        opacity: 0;
     }
 
     .header__links_opened {
         display: flex;
         visibility: visible;
-        animation: showMenu .3s ease-in-out 1;
-        animation-fill-mode: both;
+        opacity: 1;
+        transition: opacity .3s ease-in-out;
     }
 
     .main {
