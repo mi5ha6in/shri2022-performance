@@ -9,20 +9,20 @@
 </head>
 <body>
 
-<header class="header">
-    <a href="/" class="header__logo" aria-label="Яндекс.Дом"></a>
-    <button class="header__menu" aria-expanded="false">
-        <span class="header__menu-text a11y-hidden">Открыть меню</span>
+<header class="h">
+    <a href="/" class="h__logo" aria-label="Яндекс.Дом"></a>
+    <button class="h__menu" aria-expanded="false">
+        <span class="h__menu-text a11y-hidden">Открыть меню</span>
     </button>
-    <ul class="header__links">
-        <li class="header__item">
-            <a class="header__link header__link_current" href="/" aria-current="page">Сводка</a>
+    <ul class="h__links">
+        <li class="h__item">
+            <a class="h__link h__link_current" href="/" aria-current="page">Сводка</a>
         </li>
-        <li class="header__item">
-            <a class="header__link" href="/devices">Устройства</a>
+        <li class="h__item">
+            <a class="h__link" href="/devices">Устройства</a>
         </li>
-        <li class="header__item">
-            <a class="header__link" href="/scripts">Сценарии</a>
+        <li class="h__item">
+            <a class="h__link" href="/scripts">Сценарии</a>
         </li>
     </ul>
 </header>
@@ -387,20 +387,20 @@
 
     function makeMenu(node) {
         let expanded = false;
-        const links = document.querySelector('.header__links');
+        const links = document.querySelector('.h__links');
 
         node.addEventListener('click', () => {
             expanded = !expanded;
             node.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-            node.querySelector('.header__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
-            links.classList.toggle('header__links_opened', expanded);
-            links.classList.add('header__links-toggled');
+            node.querySelector('.h__menu-text').textContent = expanded ? 'Закрыть меню' : 'Открыть меню';
+            links.classList.toggle('h__links_opened', expanded);
+            links.classList.add('h__links-toggled');
         });
     }
 
     document.addEventListener('DOMContentLoaded', () => {
         Array.from(document.querySelectorAll('.main__devices')).forEach(makeTabs);
-        Array.from(document.querySelectorAll('.header__menu')).forEach(makeMenu);
+        Array.from(document.querySelectorAll('.h__menu')).forEach(makeMenu);
     });
 })();
 

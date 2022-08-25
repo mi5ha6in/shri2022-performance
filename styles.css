@@ -37,7 +37,7 @@ html, body {
     clip: rect(1px 1px 1px 1px);
 }
 
-.header {
+.h {
     position: relative;
     display: flex;
     flex: 0 0 auto;
@@ -49,7 +49,7 @@ html, body {
     border-bottom: 1px solid #F0F0F0;
 }
 
-.header__logo {
+.h__logo {
     flex: 0 0 auto;
     width: 6.75rem;
     height: 2.3125rem;
@@ -59,7 +59,7 @@ html, body {
     background-size: contain;
 }
 
-.header__menu {
+.h__menu {
     display: none;
     width: 3.5rem;
     height: 100%;
@@ -73,7 +73,7 @@ html, body {
     cursor: pointer;
 }
 
-.header__links {
+.h__links {
     display: flex;
     gap: 1.75rem;
     margin: 0;
@@ -82,12 +82,12 @@ html, body {
 }
 
 
-.header__item {
+.h__item {
     margin: 0;
     padding: 0;
 }
 
-.header__link {
+.h__link {
     font-weight: bold;
     opacity: .6;
     transition: opacity .15s ease-in-out;
@@ -95,11 +95,11 @@ html, body {
     color: #333333;
 }
 
-.header__link:hover {
+.h__link:hover {
     opacity: 1;
 }
 
-.header__link_current {
+.h__link_current {
     opacity: 1;
 }
 
@@ -409,16 +409,16 @@ html, body {
 }
 
 @media (max-width: 768px) {
-    .header {
+    .h {
         height: 4rem;
         margin-bottom: 0;
         padding: 0 0 0 1.25rem;
         border-bottom: none;
     }
-    .header__menu {
+    .h__menu {
         display: block;
     }
-    .header__links {
+    .h__links {
         display: none;
 
         position: absolute;
@@ -433,13 +433,13 @@ html, body {
         box-shadow: 0 2px 6px 0 rgba(197,186,186,0.50);
     }
 
-    .header__links-toggled {
+    .h__links-toggled {
         display: flex;
         transition: opacity .3s ease-in-out;
         opacity: 0;
     }
 
-    .header__links_opened {
+    .h__links_opened {
         display: flex;
         visibility: visible;
         opacity: 1;
